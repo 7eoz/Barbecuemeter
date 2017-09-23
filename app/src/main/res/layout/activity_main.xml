@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.studies.sandrini.barbecuemeter.MainActivity">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Inform the number of men:"/>
+
+    <SeekBar
+        android:id="@+id/men_bar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/title1"
+        android:max="30"
+        android:progress="1"/>
+
+    <TextView
+        android:id="@+id/men_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/men_bar"
+        android:layout_alignTop="@+id/men_bar"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Inform the number of women:"
+        android:layout_below="@+id/men_bar"/>
+
+    <SeekBar
+        android:id="@+id/women_bar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/title2"
+        android:max="30"
+        android:progress="1"/>
+
+    <TextView
+        android:id="@+id/women_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/women_bar"
+        android:layout_alignTop="@+id/women_bar"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Inform the number of chidren:"
+        android:layout_below="@+id/women_bar"/>
+
+    <SeekBar
+        android:id="@+id/children_bar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/title3"
+        android:max="30"
+        android:progress="1"/>
+
+    <TextView
+        android:id="@+id/children_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/children_bar"
+        android:layout_alignTop="@+id/children_bar"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/sausage_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/children_bar"
+        android:text="Sausage:"/>
+
+    <TextView
+        android:id="@+id/meat_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/sausage_output"
+        android:text="Meat:"/>
+
+
+</RelativeLayout>
